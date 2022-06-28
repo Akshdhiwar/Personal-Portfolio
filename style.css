@@ -174,7 +174,7 @@ nav {
     z-index: 2;
   }
   .nav-logo img {
-    height: 70px;
+    height: 50px;
   }
   .container .left {
     display: none;
@@ -215,7 +215,7 @@ nav {
 @media (max-width: 575px) {
   .name h1,
   .name span {
-    font-size: 80px;
+    font-size: 50px;
   }
   nav .menu {
     display: none;
@@ -229,17 +229,24 @@ nav {
     float: left;
   }
   nav .btn a i {
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
-    top: 15px;
-    right: 30px;
+    top: 10px;
+    right: 20px;
     position: absolute;
   }
   nav .btn {
     display: block;
   }
+  .h1 h1 {
+    font-size: 45px;
+  }
+  .h1 h2 {
+    font-size: 30px;
+  }
 }
 .cover.active {
   display: grid;
   left: 0;
+  position: fixed;
 }
