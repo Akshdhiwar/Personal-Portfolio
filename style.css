@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.container .left {
+  text-align: center;
+  width: 272px;
+  background-color: #fd5d5d;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  float: left;
+}
+.left-content {
+  margin: auto;
+}
+.left a {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 9px 80px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.left .menu a:first-child {
+  margin-top: 11px;
+}
+.container .right {
+  width: calc(100% - 271px);
+  height: 100vh;
+  float: right;
+}
+img {
+  height: 160px;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+.right section {
+  width: 100%;
+  height: 100vh;
+  border-bottom: 1px solid lightgrey;
+}
+.name h1,
+.name span,
+.add p,
+.add a {
+  font-family: "Saira Extra Condensed", sans-serif;
+}
+.content p {
+  font-family: "Open Sans", sans-serif;
+}
+.name span {
+  color: #fd5d5d;
+}
+.name h1 {
+  color: rgba(0, 0, 0, 0.8);
+}
+.name h1,
+.name span {
+  text-transform: uppercase;
+  font-size: 100px;
+}
+.add p,
+.add a {
+  font-size: 25px;
+  font-weight: 500;
+}
+.add p {
+  color: rgba(0, 0, 0, 0.5);
+}
+.add a {
+  color: #fd5d5d;
+  text-transform: uppercase;
+}
+.name a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.menu a:hover {
+  color: #fff;
+}
+.content p {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 500;
+}
+.icons a {
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 17px;
+}
+.icons a:hover {
+  color: #fd5d5d;
+}
+.content {
+  margin: 50px 0;
+}
+
+section .center {
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+
+  top: 50%;
+  transform: translateY(-50%);
+}
+.h1 h1 {
+  font-size: 55px;
+  color: #fd5d5d;
+  font-family: "Saira Extra Condensed", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.h1 p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4);
+}
+.h1 h2 {
+  font-family: "Saira Extra Condensed", sans-serif;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+}
+.h1 h3 {
+  font-family: "Saira Extra Condensed", sans-serif;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  font-weight: 500;
+}
+.h1 span {
+  float: right;
+  color: #fd5d5d;
+}
+.h1 i {
+  font-size: 60px;
+  margin: 0 20px 0 0;
+}
+.check {
+  display: flex;
+}
+.check i {
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.4);
+}
+.check i,
+.check p:hover {
+  color: #32cd32;
+}
+.hov:hover {
+  color: #32cd32;
+}
+.hov {
+  color: rgba(0, 0, 0, 0.5);
+}
+nav {
+  display: none;
+}
+@media (max-width: 875px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fd5d5d;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  .nav-logo img {
+    height: 70px;
+  }
+  .container .left {
+    display: none;
+  }
+  .container .right {
+    width: 100%;
+  }
+  nav .menu a {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 500;
+    margin-right: 20px;
+  }
+  .btn {
+    display: none;
+  }
+}
+.cover {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #fd5d5d;
+  position: absolute;
+  z-index: 3;
+  left: -100%;
+}
+.cover a {
+  font-size: 30px;
+  color: #fff;
+}
+.cover a svg {
+  position: absolute;
+  right: 20px;
+  height: 55px;
+
+  color: #fff;
+}
+@media (max-width: 575px) {
+  .name h1,
+  .name span {
+    font-size: 80px;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav {
+    display: inline;
+    position: fixed;
+  }
+  nav img {
+    margin-left: 30px;
+    float: left;
+  }
+  nav .btn a i {
+    font-size: 40px;
+    color: #fff;
+    top: 15px;
+    right: 30px;
+    position: absolute;
+  }
+  nav .btn {
+    display: block;
+  }
+}
+.cover.active {
+  display: grid;
+  left: 0;
+}
